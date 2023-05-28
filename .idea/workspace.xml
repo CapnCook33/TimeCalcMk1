@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57c6af6c-27ff-43b5-bf6d-fa811b21c2c8" name="Changes" comment="23/05/28, 3:55am - Update 1 - First attempt at committing and pushing to Github using the features inside of IntelliJ.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TimeCalcMk1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TimeCalcMk1.java" afterDir="false" />
-    </list>
+    <list default="true" id="57c6af6c-27ff-43b5-bf6d-fa811b21c2c8" name="Changes" comment="Update 3? - Second terminal test&#10;&#10;&#10;23/05/28, 5:24am - Update 4(?) - Wrapping for the night. Figured out how to use IntelliJ with GitHub, now I just need to learn to properly use it. There are other Java classes and API's to handle what I want to accomplish, but I plan to finish this project regardless and personalize it for my needs.&#10;&#10;Included in update:&#10;&#10;getCurrentDateTime() method that will return both the date and time as a String with the &quot;yyyy/MM/dd HH:mm:ss&quot; format.&#10;&#10;getDate() method that will return the current date as a String with the &quot;yy/MM/dd&quot; format.&#10;&#10;getTime() method that will return the current time as a String with the &quot;HH:mm:ss&quot; format." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +57,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685260690956</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update 3? - Second terminal test&#10;&#10;&#10;23/05/28, 5:24am - Update 4(?) - Wrapping for the night. Figured out how to use IntelliJ with GitHub, now I just need to learn to properly use it. There are other Java classes and API's to handle what I want to accomplish, but I plan to finish this project regardless and personalize it for my needs.&#10;&#10;Included in update:&#10;&#10;getCurrentDateTime() method that will return both the date and time as a String with the &quot;yyyy/MM/dd HH:mm:ss&quot; format.&#10;&#10;getDate() method that will return the current date as a String with the &quot;yy/MM/dd&quot; format.&#10;&#10;getTime() method that will return the current time as a String with the &quot;HH:mm:ss&quot; format.">
+      <created>1685266176455</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685266176455</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,6 +95,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="23/05/28, 3:55am - Update 1 - First attempt at committing and pushing to Github using the features inside of IntelliJ." />
-    <option name="LAST_COMMIT_MESSAGE" value="23/05/28, 3:55am - Update 1 - First attempt at committing and pushing to Github using the features inside of IntelliJ." />
+    <MESSAGE value="23/05/28, 5:24am - Update 4(?) - Wrapping for the night. Figured out how to use IntelliJ with GitHub, now I just need to learn to properly use it. There are other Java classes and API's to handle what I want to accomplish, but I plan to finish this project regardless and personalize it for my needs.&#10;&#10;Included in update:&#10;&#10;getCurrentDateTime() method that will return both the date and time as a String with the &quot;yyyy/MM/dd HH:mm:ss&quot; format.&#10;&#10;getDate() method that will return the current date as a String with the &quot;yy/MM/dd&quot; format.&#10;&#10;getTime() method that will return the current time as a String with the &quot;HH:mm:ss&quot; format." />
+    <MESSAGE value="Update 3? - Second terminal test&#10;&#10;&#10;23/05/28, 5:24am - Update 4(?) - Wrapping for the night. Figured out how to use IntelliJ with GitHub, now I just need to learn to properly use it. There are other Java classes and API's to handle what I want to accomplish, but I plan to finish this project regardless and personalize it for my needs.&#10;&#10;Included in update:&#10;&#10;getCurrentDateTime() method that will return both the date and time as a String with the &quot;yyyy/MM/dd HH:mm:ss&quot; format.&#10;&#10;getDate() method that will return the current date as a String with the &quot;yy/MM/dd&quot; format.&#10;&#10;getTime() method that will return the current time as a String with the &quot;HH:mm:ss&quot; format." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 3? - Second terminal test&#10;&#10;&#10;23/05/28, 5:24am - Update 4(?) - Wrapping for the night. Figured out how to use IntelliJ with GitHub, now I just need to learn to properly use it. There are other Java classes and API's to handle what I want to accomplish, but I plan to finish this project regardless and personalize it for my needs.&#10;&#10;Included in update:&#10;&#10;getCurrentDateTime() method that will return both the date and time as a String with the &quot;yyyy/MM/dd HH:mm:ss&quot; format.&#10;&#10;getDate() method that will return the current date as a String with the &quot;yy/MM/dd&quot; format.&#10;&#10;getTime() method that will return the current time as a String with the &quot;HH:mm:ss&quot; format." />
   </component>
 </project>
