@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="57c6af6c-27ff-43b5-bf6d-fa811b21c2c8" name="Changes" comment="23/05/28, 3:55am - Update 1 - First attempt at committing and pushing to Github using the features inside of IntelliJ.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TimeCalcMk1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TimeCalcMk1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,9 @@
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="57c6af6c-27ff-43b5-bf6d-fa811b21c2c8" name="Changes" comment="" />
