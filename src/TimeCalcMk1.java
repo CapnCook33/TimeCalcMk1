@@ -105,6 +105,7 @@ public class TimeCalcMk1 {
     }
     //Works.
 
+    /*
     public static int getFuture(){
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy/MM/dd");
         LocalDateTime now = LocalDateTime.now();
@@ -117,8 +118,9 @@ public class TimeCalcMk1 {
         System.out.println("You chose to see " +userDays+ " days ahead.");
 
 
-        return dtf.format(behind120);
+        return dtf.format();
     }
+    */
 
     public static String remove120(){
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy/MM/dd");

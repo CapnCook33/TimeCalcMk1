@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57c6af6c-27ff-43b5-bf6d-fa811b21c2c8" name="Changes" comment="23/05/31, 2:26am, Update 7 -&#10;&#10;Scanner added to take user input.&#10;&#10;Created methods to add 15-120 days or remove 15-120 days. Notes to self scattered throughout. Definitely need to clean this up a bit. Works for now though.&#10;&#10;Gross looking if-statements to give the user the desired information.&#10;&#10;Continuation loop added and fixed so you're not stuck in a Quantum Loop with Scott Bacula.&#10;&#10;Time for a sandwich.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="57c6af6c-27ff-43b5-bf6d-fa811b21c2c8" name="Changes" comment="23/05/31, 11:58pm, Update 8 -&#10;&#10;Started working towards the consolidation of all those add and remove methods. These new methods will allow the user to tell us how many days ahead or behind they want to see. May need to make an adjustment, probably will, buuuuuut - food time.">
+      <change beforePath="$PROJECT_DIR$/src/TimeCalcMk1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TimeCalcMk1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,11 +18,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -100,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685514404441</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="23/05/31, 11:58pm, Update 8 -&#10;&#10;Started working towards the consolidation of all those add and remove methods. These new methods will allow the user to tell us how many days ahead or behind they want to see. May need to make an adjustment, probably will, buuuuuut - food time.">
+      <created>1685591898575</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685591898575</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +144,7 @@
     <MESSAGE value="23/05/31, ~1:10am, Update 6 -&#10;&#10;Cleaning a few things up, using \n instead of println, basic house cleaning like that, at the moment. Created variables that I may end up removing anyway." />
     <MESSAGE value="23/05/31, ~1:25am, Update 6 -&#10;&#10;Cleaning a few things up, using \n instead of println, basic house cleaning like that, at the moment. Created variables that I may end up removing anyway." />
     <MESSAGE value="23/05/31, 2:26am, Update 7 -&#10;&#10;Scanner added to take user input.&#10;&#10;Created methods to add 15-120 days or remove 15-120 days. Notes to self scattered throughout. Definitely need to clean this up a bit. Works for now though.&#10;&#10;Gross looking if-statements to give the user the desired information.&#10;&#10;Continuation loop added and fixed so you're not stuck in a Quantum Loop with Scott Bacula.&#10;&#10;Time for a sandwich." />
-    <option name="LAST_COMMIT_MESSAGE" value="23/05/31, 2:26am, Update 7 -&#10;&#10;Scanner added to take user input.&#10;&#10;Created methods to add 15-120 days or remove 15-120 days. Notes to self scattered throughout. Definitely need to clean this up a bit. Works for now though.&#10;&#10;Gross looking if-statements to give the user the desired information.&#10;&#10;Continuation loop added and fixed so you're not stuck in a Quantum Loop with Scott Bacula.&#10;&#10;Time for a sandwich." />
+    <MESSAGE value="23/05/31, 11:58pm, Update 8 -&#10;&#10;Started working towards the consolidation of all those add and remove methods. These new methods will allow the user to tell us how many days ahead or behind they want to see. May need to make an adjustment, probably will, buuuuuut - food time." />
+    <option name="LAST_COMMIT_MESSAGE" value="23/05/31, 11:58pm, Update 8 -&#10;&#10;Started working towards the consolidation of all those add and remove methods. These new methods will allow the user to tell us how many days ahead or behind they want to see. May need to make an adjustment, probably will, buuuuuut - food time." />
   </component>
 </project>
