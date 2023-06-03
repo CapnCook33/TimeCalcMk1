@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57c6af6c-27ff-43b5-bf6d-fa811b21c2c8" name="Changes" comment="23/06/01, ~6;00am, Update 9 - &#10;&#10;Personal Update - Food turned into sleep.&#10;&#10;Application Update - Edited very tiny detail on lines 109-123 to hold that in place for the moment. Very tiny detail, very tiny update.">
+    <list default="true" id="57c6af6c-27ff-43b5-bf6d-fa811b21c2c8" name="Changes" comment="23/06/03, 2:xxpm, Update 10 - &#10;&#10;Fixing up the getFuture() method to a working state. It was 6:00am and I had been awake for like 32 hours, cut me some slack.&#10;&#10;Clearing out some old/garbage code.&#10;&#10;Added a getPast() method. Works identical to the getFuture() method, except it gives us the users desired date in the past. Obviously.&#10;&#10;Question for future self or other programmers: If you write a bunch of garbage code like I did here, then write a cleaner method to make all that garbage irrelevant now - do you keep that old stuff in your code? Commented out down at the bottom maybe? Or tossed into a txt file? Or just know it's in GitHub? &#10;- I'm going the GitHub route for now, I talk to myself too much in comments.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TimeCalcMk1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TimeCalcMk1.java" afterDir="false" />
     </list>
@@ -115,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685613657825</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="23/06/03, 2:xxpm, Update 10 - &#10;&#10;Fixing up the getFuture() method to a working state. It was 6:00am and I had been awake for like 32 hours, cut me some slack.&#10;&#10;Clearing out some old/garbage code.&#10;&#10;Added a getPast() method. Works identical to the getFuture() method, except it gives us the users desired date in the past. Obviously.&#10;&#10;Question for future self or other programmers: If you write a bunch of garbage code like I did here, then write a cleaner method to make all that garbage irrelevant now - do you keep that old stuff in your code? Commented out down at the bottom maybe? Or tossed into a txt file? Or just know it's in GitHub? &#10;- I'm going the GitHub route for now, I talk to myself too much in comments.">
+      <created>1685817856312</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1685817856312</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +161,7 @@
     <MESSAGE value="23/05/31, 2:26am, Update 7 -&#10;&#10;Scanner added to take user input.&#10;&#10;Created methods to add 15-120 days or remove 15-120 days. Notes to self scattered throughout. Definitely need to clean this up a bit. Works for now though.&#10;&#10;Gross looking if-statements to give the user the desired information.&#10;&#10;Continuation loop added and fixed so you're not stuck in a Quantum Loop with Scott Bacula.&#10;&#10;Time for a sandwich." />
     <MESSAGE value="23/05/31, 11:58pm, Update 8 -&#10;&#10;Started working towards the consolidation of all those add and remove methods. These new methods will allow the user to tell us how many days ahead or behind they want to see. May need to make an adjustment, probably will, buuuuuut - food time." />
     <MESSAGE value="23/06/01, ~6;00am, Update 9 - &#10;&#10;Personal Update - Food turned into sleep.&#10;&#10;Application Update - Edited very tiny detail on lines 109-123 to hold that in place for the moment. Very tiny detail, very tiny update." />
-    <option name="LAST_COMMIT_MESSAGE" value="23/06/01, ~6;00am, Update 9 - &#10;&#10;Personal Update - Food turned into sleep.&#10;&#10;Application Update - Edited very tiny detail on lines 109-123 to hold that in place for the moment. Very tiny detail, very tiny update." />
+    <MESSAGE value="23/06/03, 2:xxpm, Update 10 - &#10;&#10;Fixing up the getFuture() method to a working state. It was 6:00am and I had been awake for like 32 hours, cut me some slack.&#10;&#10;Clearing out some old/garbage code.&#10;&#10;Added a getPast() method. Works identical to the getFuture() method, except it gives us the users desired date in the past. Obviously.&#10;&#10;Question for future self or other programmers: If you write a bunch of garbage code like I did here, then write a cleaner method to make all that garbage irrelevant now - do you keep that old stuff in your code? Commented out down at the bottom maybe? Or tossed into a txt file? Or just know it's in GitHub? &#10;- I'm going the GitHub route for now, I talk to myself too much in comments." />
+    <option name="LAST_COMMIT_MESSAGE" value="23/06/03, 2:xxpm, Update 10 - &#10;&#10;Fixing up the getFuture() method to a working state. It was 6:00am and I had been awake for like 32 hours, cut me some slack.&#10;&#10;Clearing out some old/garbage code.&#10;&#10;Added a getPast() method. Works identical to the getFuture() method, except it gives us the users desired date in the past. Obviously.&#10;&#10;Question for future self or other programmers: If you write a bunch of garbage code like I did here, then write a cleaner method to make all that garbage irrelevant now - do you keep that old stuff in your code? Commented out down at the bottom maybe? Or tossed into a txt file? Or just know it's in GitHub? &#10;- I'm going the GitHub route for now, I talk to myself too much in comments." />
   </component>
 </project>

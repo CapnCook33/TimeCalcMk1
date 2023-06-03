@@ -1,7 +1,10 @@
-/* First attempt at a basic time calculator. The user can enter the current date, or choose desired dates
- * to calculate between, and the program will return the number of days between two dates.
- * --Additional features to be added later.
- * --This may later be added to the PlantPlanner/Personal Gardener app/program I've had in mind.
+/**
+ * @author J. Stephen Cook
+ * This program was written to help the user calculate the number of days between dates.
+ * It was originally intended to be used as part of the gardening program I'm working on.
+ * The user will choose if they would like to see a past or future date and the number
+ * of days they would like to see calculated.
+ *
  */
 
 import java.text.SimpleDateFormat;
@@ -20,9 +23,9 @@ public class TimeCalcMk1 {
         LocalDateTime now = LocalDateTime.now();
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 
-        System.out.println("The point of this program is to help you calculate the number of days between certain " +
-                "dates.\nIt was originally thought of to assist me with when to plant and harvest my garden,\n" +
-                "hence why the default dates correlate to common plant harvest times. \n");
+        System.out.println("The point of this program is to help you calculate what the date will be in a certain" +
+                " number of days, or what the date was a certain number of days ago. Intended to help with" +
+                " figuring out when to plant and harvest your garden.\n");
 
         boolean runAgain = false;
         do {
@@ -30,6 +33,8 @@ public class TimeCalcMk1 {
             System.out.println("\nThe date in 100 days is: " + dtf.format(now.plusDays(100)));
             System.out.println("The date 100 days ago was: " + dtf.format(now.minusDays(100)) + "\n");
 
+            /* These will get put into an if statement or something similar to
+               allow the user to state if they'd like to see past or future dates. */
             System.out.println(getFuture());
             System.out.println(getPast());
 
@@ -43,30 +48,12 @@ public class TimeCalcMk1 {
         }while(runAgain);
     }
 
-    public static String getCurrentDateTime(){
-        //Used to design how I want the Date/Time returned.
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-        //Variable 'now' to indicate we want current information.
-        LocalDateTime now = LocalDateTime.now();
-        return dtf.format(now);
-    }
-    //Works.
-
-    public static String getDate(){
-        SimpleDateFormat sdf = new SimpleDateFormat("yy/MM/dd");
-        Date today = new Date();
-
-        return sdf.format(today);
-    }
-    //Works.
-
-    public static String getTime(){
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
-        LocalDateTime now = LocalDateTime.now();
-        return dtf.format(now);
-    }
-    //Works.
-
+    /**
+     * This method takes input from the user and calculates
+     * that many days ahead of the current date.
+     * @params None.
+     * @return String - This returns the calculated future date.
+     */
     public static String getFuture(){
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy/MM/dd");
         LocalDateTime now = LocalDateTime.now();
@@ -80,6 +67,12 @@ public class TimeCalcMk1 {
         return dtf.format(userDate);
     }
 
+    /**
+     * This method takes input from the user and calculates
+     * that many days behind the current date.
+     * @params None.
+     * @return String - This returns the calculated past date.
+     */
     public static String getPast(){
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy/MM/dd");
         LocalDateTime now = LocalDateTime.now();
