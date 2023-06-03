@@ -27,40 +27,11 @@ public class TimeCalcMk1 {
         boolean runAgain = false;
         do {
             System.out.println("The current Date and Time is: " + dtf.format(now));
-            System.out.println("\nThe date in 100 days is: " + add100());
-            System.out.println("The date 100 days ago was: " + remove100() + "\n");
+            System.out.println("\nThe date in 100 days is: " + dtf.format(now.plusDays(100)));
+            System.out.println("The date 100 days ago was: " + dtf.format(now.minusDays(100)) + "\n");
 
-            System.out.println("How many days would you like to add?\n");
-            int userDays = keyboard.nextInt();
-            if (userDays == 120) {
-                System.out.println("The date in 120 days is: " + add120());
-            } else if (userDays == 100) {
-                System.out.println("The date in 100 days is: " + add100());
-            } else if (userDays == 75) {
-                System.out.println("The date in 75 days is: " + add75());
-            } else if (userDays == 50) {
-                System.out.println("The date in 50 days is: " + add50());
-            } else if (userDays == 30) {
-                System.out.println("The date in 30 days is: " + add30());
-            } else if (userDays == 15) {
-                System.out.println("The date in 15 days is: " + add15());
-            } else {
-                System.out.println("That's not one of the common plant dates. Try again.");
-            }
-
-        /* This works, but it can't be the most efficient way. It gets the job done for now, we'll call
-        it a placeholder, but this can certainly be improved. I want to also get started on a GUI to
-        display this information and learn how to send myself a daily or weekly email that will give
-        me a readout of the above information and whatever else I add. */
-
-//        for(int i = 0; i< commDates.length; i++){
-//            String s = String.valueOf(commDates[i]);
-//            System.out.println("The date in " + commDates[i] + "days is: " + dtf.format(s));
-//        }
-
-        /* Occam's Razor. I do want to create something to turn my yy/MM/dd format into
-        the appropriate month name and day (ex. February/Feb. 15th). Telling the day of the week would
-        be a nice addition too. */
+            System.out.println(getFuture());
+            System.out.println(getPast());
 
             System.out.println("Do you want to see more Dates? (Press 1 for Yes, 0 (zero) for No.)");
             int userChoice = keyboard.nextInt();
@@ -96,134 +67,35 @@ public class TimeCalcMk1 {
     }
     //Works.
 
-    public static String add120(){
+    public static String getFuture(){
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy/MM/dd");
         LocalDateTime now = LocalDateTime.now();
-        LocalDateTime ahead120 = now.plusDays(120);
 
-        return dtf.format(ahead120);
-    }
-    //Works.
-
-    /*
-    public static int getFuture(){
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy/MM/dd");
-        LocalDateTime now = LocalDateTime.now();
-        int userDays = 0;
-
-        System.out.println("How many days would you like to calculate?");
+        System.out.println("How many days ahead would you like to see?");
         Scanner keyboard = new Scanner(System.in);
-        userDays = keyboard.nextInt();
+        int userDays = keyboard.nextInt();
+        LocalDateTime userDate = now.plusDays(userDays);
 
-        System.out.println("You chose to see " +userDays+ " days ahead.");
-
-
-        return dtf.format();
+        System.out.print("The date in " +userDays+ " days is: ");
+        return dtf.format(userDate);
     }
-    */
 
-    public static String remove120(){
+    public static String getPast(){
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy/MM/dd");
         LocalDateTime now = LocalDateTime.now();
-        LocalDateTime behind120 = now.minusDays(120);
 
-        return dtf.format(behind120);
+        System.out.println("How many days behind would you like to see?");
+        Scanner keyboard = new Scanner(System.in);
+        int userDays = keyboard.nextInt();
+        LocalDateTime userDate = now.minusDays(userDays);
+
+        System.out.print("The date " + userDays+ " days ago was: ");
+        return dtf.format(userDate);
     }
-    //Works.
-
-    public static String add100(){
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy/MM/dd");
-        LocalDateTime now = LocalDateTime.now();
-        LocalDateTime ahead100 = now.plusDays(100);
-
-        return dtf.format(ahead100);
-    }
-    //Works.
-
-    public static String remove100(){
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy/MM/dd");
-        LocalDateTime now = LocalDateTime.now();
-        LocalDateTime behind100 = now.minusDays(100);
-
-        return dtf.format(behind100);
-    }
-    //Works.
-
-    public static String add75(){
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy/MM/dd");
-        LocalDateTime now = LocalDateTime.now();
-        LocalDateTime ahead75 = now.plusDays(75);
-
-        return dtf.format(ahead75);
-    }
-    //Works.
-
-    public static String remove75(){
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy/MM/dd");
-        LocalDateTime now = LocalDateTime.now();
-        LocalDateTime behind75 = now.minusDays(75);
-
-        return dtf.format(behind75);
-    }
-    //Works.
-
-    public static String add50(){
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy/MM/dd");
-        LocalDateTime now = LocalDateTime.now();
-        LocalDateTime ahead50 = now.plusDays(50);
-
-        return dtf.format(ahead50);
-    }
-    //Works.
-
-    public static String remove50(){
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy/MM/dd");
-        LocalDateTime now = LocalDateTime.now();
-        LocalDateTime behind50 = now.minusDays(50);
-
-        return dtf.format(behind50);
-    }
-    //Works.
-
-    public static String add30(){
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy/MM/dd");
-        LocalDateTime now = LocalDateTime.now();
-        LocalDateTime ahead30 = now.plusDays(30);
-
-        return dtf.format(ahead30);
-    }
-    //Works.
-
-    public static String remove30(){
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy/MM/dd");
-        LocalDateTime now = LocalDateTime.now();
-        LocalDateTime behind30 = now.minusDays(30);
-
-        return dtf.format(behind30);
-    }
-    //Works.
-
-    public static String add15(){
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy/MM/dd");
-        LocalDateTime now = LocalDateTime.now();
-        LocalDateTime ahead15 = now.plusDays(15);
-
-        return dtf.format(ahead15);
-    }
-    //Works.
-
-    public static String remove15(){
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy/MM/dd");
-        LocalDateTime now = LocalDateTime.now();
-        LocalDateTime behind15 = now.minusDays(15);
-
-        return dtf.format(behind15);
-    }
-    //Works.
-
-    //This was just to get the idea out, this can certainly be consolidated into one add method and
-    //one remove method that will use the amount of days the user wants to know.
 }
+
+
+
 
 /*  IDEAS FOR FEATURES
  *
@@ -237,3 +109,11 @@ public class TimeCalcMk1 {
  *  - This can certainly be added to the Plant Planner later on, but for now the focus is getting the basic date
  *  - and time commands down and figuring out how to best interact with the user. Really just myself, for now.
  */
+
+//Quick notes to self:
+/* I want to also get started on a GUI to display this information and learn how to send myself a daily
+        or weekly email that will give me a readout of the above information and whatever else I add.
+
+        Occam's Razor. I do also want to create something to turn my yy/MM/dd format into
+        the appropriate month name and day (ex. February/Feb. 15th). Telling the day of the week would
+        be a nice addition too. */
